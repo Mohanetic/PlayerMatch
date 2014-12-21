@@ -54,8 +54,12 @@ ul.detalles li {
 .flo-der{
   float: right;
 }
+
 .tama-cont {
 	height: 340px;
+  background-size:100% 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .tama-bus {
