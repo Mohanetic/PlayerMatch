@@ -1,0 +1,374 @@
+
+<html>
+	<head>
+		<title>Playermatch!</title>
+		<link rel="shortcut icon" href="Imagenes/P.png">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="js/_custom.js"></script>
+		<script src="js/registro.js"></script>
+	</head>
+
+	<body>
+		<nav id="header" class="navbar navbar-inverse" role="navigation">
+		  <div class="container-fluid col-md-12 ">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header col-sm-12 col-md-8">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#"><img src="PMlogo.png"></a>
+		    </div>
+
+		    <div class="collapse navbar-collapse col-sm-12 col-md-4 opciones-barra" id="bs-example-navbar-collapse-1">
+		    	<div class="navbar-left btn-group"> <!-- Logeo - Registro - Busqueda de perfiles -->
+		        	<input type="submit" class="btn btn-primary" value="Entrar">
+		        	<input type="submit" class="btn btn-primary" value="Registrarse" data-toggle="modal" data-target="#myModal">
+		        </div>
+
+		        <!-- PopUp de Registro -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="border:none;">
+					  <div class="modal-dialog">
+					    <div class="modal-content" style="background-image:url(ScrollReg.png);">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					        <h4 class="modal-title" id="myModalLabel">Registro</h4>
+					      </div>
+					      <div class="modal-body row">
+									
+									<div class="col-md-4">
+										<form name="f1">
+											<ul id="formulario2-confesiones">
+												<li><input type="text" placeholder="Nombre de usuario" name="usuario"/></li>
+												<li><input type="email" placeholder="Correo electronico" name="correo"/></li>
+												<li><input type="password" placeholder="Contrase&ntilde;a" name="clave1"/></li>
+												<li><input type="password" placeholder="Confirmar Contrase&ntilde;a" name="clave2"/></li>
+											</ul>
+										</form>
+									</div>
+									
+									<div class="col-md-8">Bienvenido a Playermatch! <br/><br/>En Playermatch podr&aacute;s encontrar parejas y equipos para practicar y competir en tus deportes electr&oacute;nicos preferidos, League of Legends y Starcraft 2.</div>
+					      	</div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+					        <button type="submit" class="btn btn-primary" onClick="validar()">Enviar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div><!-- Aca termina el PopUp -->
+
+
+		        <div class="navbar-right input-group">
+					<input type="text" class="form-control" placeholder="Buscar Perfil" size="15">
+					<div class="input-group-btn"> 
+						<button type="submit" class="btn btn-primary">Buscar <i class="glyphicon glyphicon-search"></i></button>	
+					</div>
+		        </div>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+		<section id="contenido">
+
+			<div class="container wrapper bor-red" style="background-color:#323232;">
+				<div class="row fila">
+					<div class="col-md-10 col-centered">
+						<div class="col-md-4 tama-cont" style="background-image:url(Scroll9.png)">
+							<div class="container-fluid">
+								<ul>
+									<h2>Mohanetic</h2>
+								</ul>
+							</div>
+							<div class="container-fluid">
+								<img src="Imagenes/Udyr.png" width="250" heigt="250">
+							</div>
+						</div>
+
+						<div class="col-md-4 container-fluid tama-cont" style="background-image:url(Scroll10.png)">
+								<div>
+									<ul class="info-perfil">
+										<li><h2>Perfiles</h2></li>
+
+										<li><a href="#">Perfil Uno</a> <span class="flo-der"><a href="#"><i class="glyphicon glyphicon-pencil"></i> Modificar </a> <a href="#"><i class="glyphicon glyphicon-trash"></i> Eliminar </a></span></li>
+
+										<li><a href="#">Perfil Dos</a> <span class="flo-der"><a href="#"><i class="glyphicon glyphicon-pencil"></i> Modificar </a> <a href="#"><i class="glyphicon glyphicon-trash"></i> Eliminar </a></span></li>
+
+										<li><a href="#">Perfil Tres</a> <span class="flo-der"><a href="#"><i class="glyphicon glyphicon-pencil"></i> Modificar </a> <a href="#"><i class="glyphicon glyphicon-trash"></i> Eliminar </a></span></li>	
+
+										<li><a href="#">Perfil Cuatro</a> <span class="flo-der"><a href="#"><i class="glyphicon glyphicon-pencil"></i> Modificar </a> <a href="#"><i class="glyphicon glyphicon-trash"></i> Eliminar </a></span></li>		
+
+										<li><a href="#">Perfil Cinco</a> <span class="flo-der"><a href="#"><i class="glyphicon glyphicon-pencil"></i> Modificar </a> <a href="#"><i class="glyphicon glyphicon-trash"></i> Eliminar </a></span></li>		
+										<li>
+											<a href="#">
+												<input type="submit" class="btn btn-primary" value="Agregar">
+												<input type="submit" class="btn btn-primary flo-der" value="Ver mas">
+											</a>
+										</li>										
+									</ul>
+								</div>
+								<div>
+
+								</div>
+						</div>
+
+						<div class="col-md-4 container-fluid tama-cont" style="background-image:url(Scroll8.png)">
+							<ul class="info-perfil">
+									<li><h2>Otros Buscan</h2></li>
+									<li><img src="Imagenes/logoL.png" width="26"> <a href="#">Estiben </a>busca <a href="#" class="tooltips">jugador
+										<span >
+											<ul class="detalles">
+												<li>Liga</li>
+												<li>Linea</li>
+												<li>Rol</li>
+												<li>Campeon</li>
+											</ul>
+										</span></a></li>
+									<li><img src="Imagenes/logoL.png" width="26"> <a href="#">Abransirijillo </a>busca <a href="#" class="tooltips">jugador <span >
+											<ul class="detalles">
+												<li>Liga</li>
+												<li>Linea</li>
+												<li>Rol</li>
+												<li>Campeon</li>
+											</ul>
+										</span></a></li>
+									<li><img src="Imagenes/logoSC.png" width="26"> <a href="#">ZeonSama </a>busca <a href="#" class="tooltips">jugador <span >
+											<ul class="detalles">
+												<li>Liga</li>
+												<li>Linea</li>
+												<li>Rol</li>
+												<li>Campeon</li>
+											</ul>
+										</span></a></li>	
+									<li><img src="Imagenes/logoL.png" width="26"> <a href="#">CuantsCopasTenes </a>busca <a href="#" class="tooltips">jugador <span >
+											<ul class="detalles">
+												<li>Liga</li>
+												<li>Linea</li>
+												<li>Rol</li>
+												<li>Campeon</li>
+											</ul>
+										</span></a></li>	
+									<li><img src="Imagenes/logoSC.png" width="26"> <a href="#">That so Draven  </a>busca <a href="#" class="tooltips">jugador <span >
+											<ul class="detalles">
+												<li>Liga</li>
+												<li>Linea</li>
+												<li>Rol</li>
+												<li>Campeon</li>
+											</ul>
+										</span></a></li>		
+								</ul>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="row fila">
+					<div class="col-md-10 col-centered">
+
+						<div class="col-md-4 tama-cont" style="background-image:url(Scroll8.png)">
+							<div class="tabbable tabs-left"><!-- Tabla filtro :D -->
+						        <ul class="nav nav-tabs vertical-text">
+						          <li class="active"><a href="#c" data-toggle="tab" style="background-image:url(Imagenes/Flecha2.png);"></a></li>
+						          <li><a href="#d" data-toggle="tab" style="background-image:url(Imagenes/Flecha3.png);"></a></li>
+						        </ul>
+
+						        <div class="tab-content">
+
+						        	<div class="tab-pane active" id="c">
+						        			<ul class="info-perfil">
+						        				<li><h2>Filtro Lolero</h2></li>
+						        				<li>
+														<label>Liga:</label>
+														<select>
+															<option>Bronce</option>
+															<option>Plata</option>
+															<option>Oro</option>
+															<option>Platino</option>
+															<option>Diamante</option>
+															<option>Maestro</option>
+															<option>Retador</option>
+														</select>
+												</li>
+												<li>
+														<label>Linea:</label>
+														<select >
+															<option>Carril Superior</option>
+															<option>Carril Central</option>
+															<option>Carril Inferior</option>
+															<option>Jungla</option>
+														</select>
+												</li>
+												<li>
+														<label>Rol:</label>
+														<select>
+															<option>Asesino</option>
+															<option>Luchador</option>
+															<option>Mago</option>
+															<option>Soporte</option>
+															<option>Tanque</option>
+															<option>Tirador</option>
+														</select>
+												</li>
+												<li>
+														<label>Campeon:</label>
+														<select>
+															<option>Campeon1</option>
+															<option>Campeon2</option>
+															<option>Campeon3</option>
+															<option>Campeon4</option>
+														</select>
+												</li>
+												<li>
+													<input type="submit" class="btn btn-primary" value="Buscar">
+												</li>
+						        			</ul>
+						     		</div>
+
+						         	<div class="tab-pane" id="d" >
+						        			<ul class="info-perfil">
+						        				<li><h2>Filtro SC2</h2></li>
+						        				<li>
+														<label>Liga:</label>
+														<select>
+															<option>Bronce</option>
+															<option>Plata</option>
+															<option>Oro</option>
+															<option>Platino</option>
+															<option>Diamante</option>
+															<option>Maestro</option>
+															<option>Retador</option>
+														</select>
+												</li>
+												<li>
+														<label>Linea:</label>
+														<select >
+															<option>Carril Superior</option>
+															<option>Carril Central</option>
+															<option>Carril Inferior</option>
+															<option>Jungla</option>
+														</select>
+												</li>
+												<li>
+														<label>Rol:</label>
+														<select>
+															<option>Asesino</option>
+															<option>Luchador</option>
+															<option>Mago</option>
+															<option>Soporte</option>
+															<option>Tanque</option>
+															<option>Tirador</option>
+														</select>
+												</li>
+												<li>
+														<label>Campeon:</label>
+														<select>
+															<option>Campeon1</option>
+															<option>Campeon2</option>
+															<option>Campeon3</option>
+															<option>Campeon4</option>
+														</select>
+												</li>
+												<li>
+													<input type="submit" class="btn btn-primary" value="Buscar">
+												</li>
+						        			</ul>
+						     		</div>
+						        </div>
+						     </div>
+						</div>
+
+						<div class="col-md-8 container-fluid tama-cont" style="background-image:url(Scroll13.png)">
+							<div class="titulo"><h2>Resultados</h2></div>
+
+							<div class="tama-bus">
+								<ul class="menu">
+									<li>
+										<ul class="info-perfil">
+											<li><h4>ZeonSama</h4></li>
+											<li><img src="Imagenes/Ahri.png" width="100"></li>
+											<li><a href="#" class="tooltips">Busca <span >
+											<ul class="detalles">
+												<li>Liga</li>
+												<li>Linea</li>
+												<li>Rol</li>
+												<li>Campeon</li>
+											</ul>
+										</span></a></li>
+											<li><input type="submit" class="btn btn-primary" value="Aceptar"></li>
+										</ul>
+									</li>
+									<li>
+										<ul class="info-perfil">
+											<li><h4>Estiben</h4></li>
+											<li><img src="Imagenes/Draven.png" width="100"></li>
+											<li><a href="#" class="tooltips">Busca <span >
+											<ul class="detalles">
+												<li>Liga</li>
+												<li>Linea</li>
+												<li>Rol</li>
+												<li>Campeon</li>
+											</ul>
+										</span></a></li>
+											<li><input type="submit" class="btn btn-primary" value="Aceptar"></li>
+										</ul>
+									</li>
+									<li>
+										<ul class="info-perfil">
+											<li><h4>Abransirijillo</h4></li>
+											<li><img src="Imagenes/Sona.png" width="100"></li>
+											<li><a href="#" class="tooltips">Busca <span >
+											<ul class="detalles">
+												<li>Liga</li>
+												<li>Linea</li>
+												<li>Rol</li>
+												<li>Campeon</li>
+											</ul>
+										</span></a></li>
+											<li><input type="submit" class="btn btn-primary" value="Aceptar"></li>
+										</ul>
+									</li>		
+									<li>
+										<ul class="info-perfil">
+											<li><h4>Cristian</h4></li>
+											<li><img src="Imagenes/Nasus.png" width="100"></li>
+											<li><a href="#" class="tooltips">Busca 
+												<span >
+													<ul class="detalles">
+														<li>Liga</li>
+														<li>Linea</li>
+														<li>Rol</li>
+														<li>Campeon</li>
+													</ul>
+												</span></a></li>
+											<li><input type="submit" class="btn btn-primary" value="Aceptar"></li>
+										</ul>
+									</li>									
+								</ul>
+							</div>
+						</div>
+				
+					</div>
+				</div>
+				<div class="row fila">
+					<div class="col-md-10 col-centered">
+
+						<div class="col-md-12 container-fluid tama-cont" style="background-image:url(Imagenes/ScrollHistorial.png)" >
+							<div id="recuadro-perfil">
+								<div class="titulo">
+						        	<h2>no ce ke aser o ke</h2>
+						        </div>
+						        <div class="filtro">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.
+						        </div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</section>	
+	</body>
+</html>
+

@@ -1,0 +1,172 @@
+body{
+	background-color: #2d6da3;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;}
+
+a:hover {
+color: #21610B;
+text-decoration: none;
+}
+
+.fila {
+	background-color: #303030;
+}
+li {
+	list-style: none;
+}
+#filtro-confesiones li {
+	float: left;
+	margin-right: 10px;
+	margin: 10;
+}
+#filtro-confesiones {
+	float: left;
+	margin-right: 10px;
+	margin: 10;
+}
+#lista-notificaciones {
+	border: 1px solid #ccc;
+	padding: 15px;
+	border-radius: 4px;
+	background-color: #efefef;
+}
+#lista-notificaciones li {
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+	font-size: 0.9em;
+}
+#lista-notificaciones li.ultimo {
+	border: none;
+}
+#forma-confesion {
+	border:1px solid #ccc;
+	background-color: #efefef;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	padding: 0;
+}
+#forma-confesion .btn-marg {
+	margin: 0;
+}
+#enviar-confesion {
+	padding: 0;
+	margin: 0;
+}
+#formulario2-confesiones li {
+	float: left;
+	margin: 10;
+}
+#forma-perfil {
+	border:1px solid #ccc;
+	background-color: #efefef;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	padding: 5;
+	font-size: 14px;
+}
+.icono-mas {
+	text-align: center;
+}
+.meta-confesion {
+	background-color: #e3e3e3;
+	border-top: 1px solid #ccc;
+	padding: 10px 10px 10px 10px;
+}
+
+.botones-confesion {	
+	float: left;
+}
+
+.formulario-confesion {	
+	float: right;
+	margin: 10px 10px 10px 10px;
+}
+.tags-confesion {
+	float: left;
+	margin: 0 0 0 10px;
+	border-left: 1px solid #ccc;
+	padding: 0 0 0 10px;
+}
+.mensaje{
+	border-right: 1px solid #ccc;
+	margin: 10px 10px 10px 0px;
+	padding: 10px 10px 10px 0px;
+}
+.texto-confesion {
+	margin: 10px 0;
+	width: 100%;
+	border: none;
+	background-color: #efefef;
+	resize: none;
+	overflow: hidden;
+	padding: 10px;
+}
+.texto-confesion:focus {
+	outline: none;
+}
+.confesion-publicada {
+	margin: 10px 10px;
+}
+.submenu-confesiones {
+	background-color: #e3e3e3;
+	border-top: 1px solid #ccc;
+	padding: 8px 10px 25px 10px;
+	font-size: 0.9em;
+}
+.submenu-confesiones a:hover {
+	text-decoration: none;
+}
+.boton-registro {
+	float: left;
+	margin: 0 0 0 10px;
+	border-left: 1px solid #ccc;
+	padding: 0 0 0 10px;
+}
+.campos-registro {
+	margin: 10 10 10 10px;
+	padding: 0 0 0 10px;
+	width: 300;
+}
+.modal-admin {
+    //new custom width
+    width: 750px;
+    //must be half of the width, minus scrollbar on the left (30px)
+    margin: -345px 0 0 -375px;
+}
+#forma-mensaje {
+	border:1px solid #ccc;
+	background-color: #efefef;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	padding: 0;
+}
+#forma-mensaje .btn-marg {
+	margin: 0;
+}
+.col-centered {
+    margin: 0 auto;
+    float: none;
+}
+
+
+
+
+<div class="tabbable tabs-left">
+        <ul class="nav nav-tabs">
+          <li><a href="#a" data-toggle="tab">One</a></li>
+          <li class="active"><a href="#b" data-toggle="tab">Two</a></li>
+          <li><a href="#c" data-toggle="tab">Twee</a></li>
+        </ul>
+        <div class="tab-content">
+         <div class="tab-pane active" id="a">Lorem ipsum dolor sit amet, charetra varius quam sit amet vulputate. 
+         Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</div>
+         <div class="tab-pane" id="b">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+         Aliquam in felis sit amet augue.</div>
+         <div class="tab-pane" id="c">Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+         Quisque mauris augue, molestie tincidunt condimentum vitae. </div>
+        </div>
+      </div>
